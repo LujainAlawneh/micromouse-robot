@@ -1,4 +1,4 @@
- # BZU Micromouse v2 – Firmware
+ # BZU Micromouse – Firmware
 
 Arduino firmware (ESP32) for an autonomous micromouse robot. The robot reads
 three distance sensors and a gyroscope, builds a map of the maze, and solves it
