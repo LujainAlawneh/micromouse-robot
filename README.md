@@ -179,6 +179,27 @@ commands are available in:
 
 ---
 
+## Software Overview
+
+The software is divided into two main stages: maze exploration and path
+execution.
+
+During the **Search / Exploration Mode**, the robot senses the maze, detects
+walls, updates its internal map, runs the Flood Fill algorithm, and selects the
+next direction.
+
+The motion-control system then uses the BNO055 and wheel encoders to execute
+the selected movement accurately.
+
+After the maze has been explored, the stored path can be used for the
+**Return / Speed Run Mode**.
+
+<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/2ebddd12-7941-4d0f-8cb6-31c24bd748b5" />
+
+
+
+---
+
 ## How It Works
 
 The robot starts without knowing the complete maze.
@@ -221,4 +242,5 @@ Example:
 6 5 4 3
 5 4 3 2
 4 3 2 1
-3 2 1 0
+3 2 1 0<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/47eefdcd-1b0c-4552-bcf7-6e422cd135c4" />
+<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/d2c2d513-8a1d-4188-a900-12befdd1f742" />
