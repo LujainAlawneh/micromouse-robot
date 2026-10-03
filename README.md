@@ -1,104 +1,224 @@
-# Micromouse Robot
+ # Micromouse Robot
 
-An autonomous micromouse robot that explores a maze, builds a map of it, and
-solves it using a flood-fill algorithm. Designed and built from scratch: custom
-3D-printed chassis, ESP32 firmware, and sensor-based control.
+An autonomous Micromouse robot that explores a maze, builds a map of it, and
+solves it using a Flood Fill algorithm. The robot was designed and built from
+scratch, including a custom 3D-printed chassis, ESP32-based firmware, sensor
+integration, and closed-loop motion control.
 
 https://github.com/user-attachments/assets/da5e71bc-a102-4974-b1de-06f63951b2f3
+
+> Final Micromouse prototype during testing.
+
+---
 
 ## Team
 
 **Supervisor:** Dr. Wasel Ghanem
 
-**Team members:** Lujain Alawneh, Safia Salameh, Anees Hammoudeh, Dana Obaid, Mohammad Abutteen
+**Team Members:**
+- Lujain Alawneh
+- Safia Salameh
+- Anees Hammoudeh
+- Dana Obaid
+- Mohammad Abutteen
 
-## About the project
+---
 
-A micromouse is a small robot that has to find its way through a maze on its
-own. The goal of this project is to design, build, and program a micromouse
-from scratch, covering mechanical design, electronics, and software.
+## About the Project
 
-The robot reads its surroundings with three distance sensors (left, front,
-right) and a gyroscope, tracks its movement with wheel encoders, and uses a
-flood-fill algorithm to find a path through the maze.
+A Micromouse is a small autonomous robot that has to find its way through a
+maze without human control.
+
+The goal of this project was to design, build, and program a complete Micromouse
+robot from scratch, covering:
+
+- Mechanical design
+- 3D printing
+- Electronics
+- Sensor integration
+- Motor control
+- Embedded programming
+- Maze mapping
+- Autonomous navigation
+
+The robot reads its surroundings using three VL6180X Time-of-Flight distance
+sensors positioned on the left, front, and right sides.
+
+It tracks its orientation using a BNO055 IMU and measures wheel movement using
+motor encoders.
+
+The ESP32 processes this information, updates an internal representation of the
+maze, and uses the Flood Fill algorithm to determine the next direction of
+movement.
+
+---
 
 ## Hardware
 
-| Part | Used for |
+| Part | Used For |
 |---|---|
-| ESP32 development board (30-pin) | Main controller |
-| TB6612FNG motor driver | Drives the two motors |
-| 2x DC gear motors with encoders | Movement and odometry |
-| BNO055 IMU | Heading and turn angle |
-| 3x VL6180X ToF sensors | Left, front and right wall distance |
+| ESP32 Development Board (30-pin) | Main controller |
+| TB6612FNG Motor Driver | Drives the two motors |
+| 2x N20 DC Gear Motors with Encoders | Movement and odometry |
+| BNO055 IMU | Heading and turn-angle measurement |
+| 3x VL6180X ToF Sensors | Left, front, and right wall-distance measurement |
+| 9V Rechargeable Battery | Main power source |
+| DC-DC Voltage Regulator | Steps the battery voltage down for the electronics |
+| Wheels | Robot movement |
+| Custom 3D-Printed Chassis | Mechanical structure and component mounting |
 
-<!-- Add battery and wheels as new table rows here if you want -->
+The full pin map and software setup are available in:
 
-The full pin map is in [`Code/README.md`](Code/README.md).
+[`Code/README.md`](Code/README.md)
+
+---
 
 ## Schematic
 
-The approved circuit schematic, drawn in KiCad:
+The approved circuit schematic was created using KiCad.
 
-<!-- IMAGE: drag the schematic image here -->
+<img width="701" height="503" alt="Micromouse circuit schematic" src="https://github.com/user-attachments/assets/cef75da9-4727-4dc8-9262-0d14f23c5f77" />
 
-<img width="701" height="503" alt="Screenshot 2026-10-03 051533" src="https://github.com/user-attachments/assets/cef75da9-4727-4dc8-9262-0d14f23c5f77" />
+The schematic includes the connections between:
 
+- ESP32
+- VL6180X sensors
+- BNO055 IMU
+- TB6612FNG motor driver
+- Motors and encoders
+- Battery
+- Voltage regulator
+
+---
 
 ## Design
 
-The chassis was designed in CAD and 3D printed. We started with a preliminary
-design and improved it into the final version.
+The chassis was designed using CAD software and manufactured using 3D printing.
 
-**Preliminary design**
+The design went through several iterations before reaching the final version.
 
-<!-- IMAGE: drag the preliminary CAD image here -->
+### Preliminary Design
 
-**Final design**
+The first design was used to test the basic component placement, dimensions,
+and mechanical structure.
 
-<!-- IMAGE: drag the final CAD image here -->
+<!-- Drag the preliminary CAD image here -->
 
-## Build process
+### Final Design
 
-**1. Initial wiring and planning**
+After testing and identifying mechanical issues, the chassis dimensions and
+component placement were improved.
 
-<!-- IMAGE: drag the first wiring photo here -->
+<!-- Drag the final CAD image here -->
 
-**2. The robot taking shape**
+The final chassis was designed to hold:
 
-<!-- IMAGE: drag the "robot taking shape" photo here -->
+- ESP32
+- Motor driver
+- Distance sensors
+- IMU
+- Battery
+- Motors
+- Wheels
+- Wiring
 
-**3. Final robot**
+---
 
-<!-- IMAGE: drag the final robot photo here -->
+## Build Process
+
+The robot was built gradually, starting with individual component testing and
+ending with full hardware and software integration.
+
+### 1. Initial Wiring and Planning
+
+The electronics were first connected outside the chassis to verify the basic
+connections between the ESP32, sensors, motor driver, motors, encoders, and IMU.
+
+<!-- Drag the first wiring photo here -->
+
+### 2. Mechanical Assembly
+
+The motors, wheels, sensors, battery, and control electronics were installed on
+the 3D-printed chassis.
+
+<!-- Drag the robot-taking-shape photo here -->
+
+### 3. Final Robot
+
+After solving the mechanical and electrical problems, all components were
+integrated into the final robot.
+
+<!-- Drag the final robot photo here -->
+
+---
 
 ## Software
 
-The firmware is written for the ESP32 using the Arduino framework. The main
-parts are:
+The firmware was developed for the ESP32 using the Arduino framework.
 
-- **Flood-fill** maze solving (search run, return, and speed run)
-- **Heading PID** for straight driving, with centering between the walls
-- **Controlled turns** using the gyroscope
-- **Encoder odometry** with calibration
-- **Live tuning** of parameters over the Serial Monitor
+The main software features include:
 
-How to upload the code, the pin map, and all Serial commands are in
-[`Code/README.md`](Code/README.md).
+- **Flood Fill maze solving**
+- **Maze mapping**
+- **Search run**
+- **Return navigation**
+- **Speed-run logic**
+- **Heading PID control**
+- **Wall centering**
+- **Controlled turning**
+- **BNO055-based heading feedback**
+- **Encoder odometry**
+- **Motor speed control**
+- **Sensor filtering**
+- **Live parameter tuning through the Serial Monitor**
 
-## Challenges
+Instructions for uploading the firmware, the pin map, and available Serial
+commands are available in:
 
-*(Draft based on the code. Edit it so it matches what you really experienced.)*
+[`Code/README.md`](Code/README.md)
 
-- **Three identical distance sensors:** all three VL6180X sensors start with the same I2C address, so each one is switched on separately and given its own address at start-up.
-- **Sensor noise:** the distance readings vary by a few millimetres, so the readings are filtered before the robot uses them for centering.
-- **Accurate turns:** turning exactly 90 degrees needed a controlled speed profile and tuning with the gyroscope.
-- **Motors not identical:** the robot drifted forward when turning in place, so the controller corrects for it.
+---
 
-## Future work
+## How It Works
 
-<!-- Write your real next steps here, for example a custom PCB to remove the wires, faster speed runs -->
+The robot starts without knowing the complete maze.
 
-## License
+As it moves through the maze, it continuously senses its surroundings, updates
+the internal maze map, calculates the best direction, and executes the movement.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+The navigation cycle works as follows:
+
+1. The three VL6180X sensors measure the distances to the left, front, and right.
+2. The ESP32 converts these measurements into wall or no-wall information.
+3. Newly detected walls are stored in the internal maze representation.
+4. The Flood Fill algorithm calculates or updates the values of the maze cells.
+5. The robot selects the accessible neighboring cell with the lowest Flood Fill value.
+6. The ESP32 converts the selected direction into motor commands.
+7. The TB6612FNG motor driver controls the two motors.
+8. Encoder feedback is used to monitor traveled distance and wheel rotation.
+9. The BNO055 IMU provides heading information for accurate turns.
+10. The process repeats as the robot explores the maze.
+
+This allows the robot to gradually build a map of an initially unknown maze.
+
+---
+
+## Flood Fill Algorithm
+
+Flood Fill is the main path-planning algorithm used by the robot.
+
+The target cell is assigned the lowest value, usually `0`.
+
+Other cells are assigned increasing values based on their distance from the
+target while respecting the known maze walls.
+
+The robot then attempts to move toward an accessible neighboring cell with a
+lower value.
+
+Example:
+
+```text
+6 5 4 3
+5 4 3 2
+4 3 2 1
+3 2 1 0
