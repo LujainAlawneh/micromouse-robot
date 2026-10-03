@@ -1,7 +1,6 @@
 
  # Micromouse Robot
-<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
-
+<img width="450" alt="Micromouse Robot" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
 
 An autonomous Micromouse robot that explores a maze, builds a map of it, and
 solves it using a Flood Fill algorithm. The robot was designed and built from
@@ -104,11 +103,7 @@ The design went through several iterations before reaching the final version.
 
 The first design was used to test the basic component placement, dimensions,
 and mechanical structure.
-<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/0bf90fb3-9c25-409d-acd0-ff5dadc0329b" />
-
-<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/14728389-cd4d-422a-a343-8d31863375b0" />
-<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/f0ba02b8-a533-4fb0-9968-aa0ec2074f36" />
-<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/8cbc94bb-b3ad-4372-a9d9-5b2cf0c7ec6a" />
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/481dc5e7-47bb-4c30-a816-47c5dee286c0" />
 
 
 ### Final Design
