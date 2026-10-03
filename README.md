@@ -1,9 +1,8 @@
+# Micromouse Robot
 
- # Micromouse Robot
 <img width="450" alt="Micromouse Robot" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
 
 ## Project Overview
-
 
 An autonomous Micromouse robot that explores a maze, builds a map of it, and
 solves it using a Flood Fill algorithm. The robot was designed and built from
@@ -80,11 +79,8 @@ The full pin map and software setup are available in:
 
 ## Schematic
 
-The approved circuit schematic was created using KiCad.
-
-<img width="701" height="503" alt="Micromouse circuit schematic" src="https://github.com/user-attachments/assets/cef75da9-4727-4dc8-9262-0d14f23c5f77" />
-
-The schematic includes the connections between:
+The approved circuit schematic was created using KiCad. It includes the
+connections between:
 
 - ESP32
 - VL6180X sensors
@@ -94,28 +90,30 @@ The schematic includes the connections between:
 - Battery
 - Voltage regulator
 
+<img width="701" height="503" alt="Micromouse circuit schematic" src="https://github.com/user-attachments/assets/cef75da9-4727-4dc8-9262-0d14f23c5f77" />
+
+*Circuit schematic of the Micromouse.*
+
 ---
 
 ## Design
 
 The chassis was designed using CAD software and manufactured using 3D printing.
-
 The design went through several iterations before reaching the final version.
 
 ### Preliminary Design
 
 The first design was used to test the basic component placement, dimensions,
 and mechanical structure.
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/481dc5e7-47bb-4c30-a816-47c5dee286c0" />
 
+<img width="562" height="424" alt="Preliminary CAD design" src="https://github.com/user-attachments/assets/d92b3999-1192-4491-96db-2e20482407b6" />
+
+*Preliminary chassis design.*
 
 ### Final Design
 
 After testing and identifying mechanical issues, the chassis dimensions and
 component placement were improved.
-
-
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/886dd40c-d063-41f5-a978-a26f2b7abbe1" />
 
 The final chassis was designed to hold:
 
@@ -127,6 +125,10 @@ The final chassis was designed to hold:
 - Motors
 - Wheels
 - Wiring
+
+<img width="900" alt="Final CAD design" src="https://github.com/user-attachments/assets/886dd40c-d063-41f5-a978-a26f2b7abbe1" />
+
+*Final chassis design.*
 
 ---
 
@@ -200,9 +202,9 @@ the selected movement accurately.
 After the maze has been explored, the stored path can be used for the
 **Return / Speed Run Mode**.
 
-<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/2ebddd12-7941-4d0f-8cb6-31c24bd748b5" />
+<img width="900" alt="Software overview diagram" src="https://github.com/user-attachments/assets/2ebddd12-7941-4d0f-8cb6-31c24bd748b5" />
 
-
+*Software overview.*
 
 ---
 
@@ -248,20 +250,23 @@ Example:
 6 5 4 3
 5 4 3 2
 4 3 2 1
-3 2 1 0<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/47eefdcd-1b0c-4552-bcf7-6e422cd135c4" />
-<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/d2c2d513-8a1d-4188-a900-12befdd1f742" />
+3 2 1 0
+```
 
+<!-- Drag a Flood Fill image here if you have one -->
 
-## Future work
+---
+
+## Future Work
 
 - **Custom PCB:** move all connections onto a printed circuit board to remove the loose wires and make the robot smaller and lighter.
 - **Faster speed runs:** increase the speed of the final run by further tuning the PID and turn parameters.
 - **Smarter paths:** add diagonal movement and smoother corners to shorten the run time.
 - **Larger mazes:** test and tune the robot on a full-size 16x16 maze.
-- **Better sensing:** reduce sensor noise to improve wall centering.<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/abd70717-1668-4976-9e12-282b1936bb2a" />
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/40a810ae-1889-40c5-bb18-35674a9424fd" />
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/3a92b505-82e0-4273-82da-863e75abac01" />
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/50d806de-ddba-435a-9bbe-eb52d29166ab" />
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/50454b7d-24d2-41da-b553-e8623e5f5dd0" />
-<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/9739f49f-0477-44e8-99aa-5ceffb3343ae" />
+- **Better sensing:** reduce sensor noise to improve wall centering.
 
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
