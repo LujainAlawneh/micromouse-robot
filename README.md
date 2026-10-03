@@ -1,9 +1,5 @@
-<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/ef7fab5a-b905-413c-bcc0-d6ee59adb5ee" />
-<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/33c54d76-e7bf-4cce-b053-e9759daf1b17" />
-<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/17ad40ce-bd5a-4ea3-ae70-f300c47c85af" />
+
  # Micromouse Robot
-<img width="1774" height="887" alt="55048e3f-c82b-4fcd-b875-f134fd3c8ea3" src="https://github.com/user-attachments/assets/001952c0-7b14-4481-a079-df68f74d2f12" />
-<img width="1774" height="887" alt="55048e3f-c82b-4fcd-b875-f134fd3c8ea3" src="https://github.com/user-attachments/assets/08c2bf17-9aac-4c4a-9db5-650a0af05c4c" />
 <img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
 
 
