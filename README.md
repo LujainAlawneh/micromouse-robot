@@ -6,6 +6,10 @@ solves it using a flood-fill algorithm. Designed and built from scratch: custom
 
 <!-- VIDEO: drag your maze-solving video here (on its own line) -->
 
+
+https://github.com/user-attachments/assets/da5e71bc-a102-4974-b1de-06f63951b2f3
+
+
 ## Team
 
 **Supervisor:** Dr. Wasel Ghanem
