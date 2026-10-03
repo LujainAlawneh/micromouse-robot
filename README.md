@@ -2,6 +2,9 @@
  # Micromouse Robot
 <img width="450" alt="Micromouse Robot" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
 
+## Project Overview
+
+
 An autonomous Micromouse robot that explores a maze, builds a map of it, and
 solves it using a Flood Fill algorithm. The robot was designed and built from
 scratch, including a custom 3D-printed chassis, ESP32-based firmware, sensor
