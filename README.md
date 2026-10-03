@@ -4,11 +4,7 @@ An autonomous micromouse robot that explores a maze, builds a map of it, and
 solves it using a flood-fill algorithm. Designed and built from scratch: custom
 3D-printed chassis, ESP32 firmware, and sensor-based control.
 
-<!-- VIDEO: drag your maze-solving video here (on its own line) -->
-
-
 https://github.com/user-attachments/assets/da5e71bc-a102-4974-b1de-06f63951b2f3
-
 
 ## Team
 
@@ -39,6 +35,14 @@ flood-fill algorithm to find a path through the maze.
 <!-- Add battery and wheels as new table rows here if you want -->
 
 The full pin map is in [`Code/README.md`](Code/README.md).
+
+## Schematic
+
+The approved circuit schematic, drawn in KiCad:
+
+<!-- IMAGE: drag the schematic image here -->
+
+[View full-resolution schematic (PDF)](Hardware/Micromouse_First.pdf)
 
 ## Design
 
