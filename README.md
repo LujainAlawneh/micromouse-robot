@@ -1,4 +1,11 @@
+<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/ef7fab5a-b905-413c-bcc0-d6ee59adb5ee" />
+<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/33c54d76-e7bf-4cce-b053-e9759daf1b17" />
+<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/17ad40ce-bd5a-4ea3-ae70-f300c47c85af" />
  # Micromouse Robot
+<img width="1774" height="887" alt="55048e3f-c82b-4fcd-b875-f134fd3c8ea3" src="https://github.com/user-attachments/assets/001952c0-7b14-4481-a079-df68f74d2f12" />
+<img width="1774" height="887" alt="55048e3f-c82b-4fcd-b875-f134fd3c8ea3" src="https://github.com/user-attachments/assets/08c2bf17-9aac-4c4a-9db5-650a0af05c4c" />
+<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
+
 
 An autonomous Micromouse robot that explores a maze, builds a map of it, and
 solves it using a Flood Fill algorithm. The robot was designed and built from
@@ -101,15 +108,20 @@ The design went through several iterations before reaching the final version.
 
 The first design was used to test the basic component placement, dimensions,
 and mechanical structure.
+<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/0bf90fb3-9c25-409d-acd0-ff5dadc0329b" />
 
-<!-- Drag the preliminary CAD image here -->
+<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/14728389-cd4d-422a-a343-8d31863375b0" />
+<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/f0ba02b8-a533-4fb0-9968-aa0ec2074f36" />
+<img width="1122" height="1402" alt="هة" src="https://github.com/user-attachments/assets/8cbc94bb-b3ad-4372-a9d9-5b2cf0c7ec6a" />
+
 
 ### Final Design
 
 After testing and identifying mechanical issues, the chassis dimensions and
 component placement were improved.
 
-<!-- Drag the final CAD image here -->
+
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/886dd40c-d063-41f5-a978-a26f2b7abbe1" />
 
 The final chassis was designed to hold:
 
@@ -244,3 +256,18 @@ Example:
 4 3 2 1
 3 2 1 0<img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/47eefdcd-1b0c-4552-bcf7-6e422cd135c4" />
 <img width="1672" height="941" alt="3accdecb-b1f3-47c5-ab2f-9bf1b9f4f74c" src="https://github.com/user-attachments/assets/d2c2d513-8a1d-4188-a900-12befdd1f742" />
+
+
+## Future work
+
+- **Custom PCB:** move all connections onto a printed circuit board to remove the loose wires and make the robot smaller and lighter.
+- **Faster speed runs:** increase the speed of the final run by further tuning the PID and turn parameters.
+- **Smarter paths:** add diagonal movement and smoother corners to shorten the run time.
+- **Larger mazes:** test and tune the robot on a full-size 16x16 maze.
+- **Better sensing:** reduce sensor noise to improve wall centering.<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/abd70717-1668-4976-9e12-282b1936bb2a" />
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/40a810ae-1889-40c5-bb18-35674a9424fd" />
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/3a92b505-82e0-4273-82da-863e75abac01" />
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/50d806de-ddba-435a-9bbe-eb52d29166ab" />
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/50454b7d-24d2-41da-b553-e8623e5f5dd0" />
+<img width="1774" height="887" alt="5653c8b7-cd1d-4859-ab7c-ac2a9f36a44c" src="https://github.com/user-attachments/assets/9739f49f-0477-44e8-99aa-5ceffb3343ae" />
+
