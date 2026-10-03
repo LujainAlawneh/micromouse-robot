@@ -1,6 +1,8 @@
 # Micromouse Robot
 
-<img width="450" alt="Micromouse Robot" src="https://github.com/user-attachments/assets/8771fa10-aaf1-4f72-8b74-74e571c68f75" />
+<div align="center">
+  <img width="450" alt="Micromouse Robot" src="YOUR-IMAGE-LINK" />
+</div>
 
 ## Project Overview
 
