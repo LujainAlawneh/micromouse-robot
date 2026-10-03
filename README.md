@@ -42,7 +42,8 @@ The approved circuit schematic, drawn in KiCad:
 
 <!-- IMAGE: drag the schematic image here -->
 
-[View full-resolution schematic (PDF)](Hardware/Micromouse_First.pdf)
+<img width="701" height="503" alt="Screenshot 2026-10-03 051533" src="https://github.com/user-attachments/assets/cef75da9-4727-4dc8-9262-0d14f23c5f77" />
+
 
 ## Design
 
